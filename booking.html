@@ -1,0 +1,106 @@
+<!doctype <!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking | SWARNA KESA</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="index.html">SWARNA<span> KESA</span></a>
+        <nav class="nav-links">
+            <a href="index.html">Beranda</a>
+            <a href="layanan.html">Layanan</a>
+            <a href="tentang.html">Tentang</a>
+            <a class="nav-booking" href="booking.html">Booking</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>Reservasi<br><em>kursimu.</em></h1>
+            <p class="text-bwh">Isi formulir untuk memilih layanan dan jadwal kunjungan.</p>
+
+            <ol class="langkah">
+                <li>
+                    <h3>Pilih layanan</h3>
+                    <p>Tentukan treatment yang kamu inginkan.</p>
+                </li>
+                <li>
+                    <h3>Tentukan jadwal</h3>
+                    <p>Pilih barber, tanggal, dan jam tersedia.</p>
+                </li>
+                <li>
+                    <h3>Konfirmasi booking</h3>
+                    <p>Simpan ringkasan booking-mu.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="form-wrap">
+            <form class="form-kotak">
+                <h2>Buat Reservasi</h2>
+
+                <label>
+                    Nama Lengkap
+                    <input type="text" name="nama" required placeholder="Masukkan nama kamu">
+                </label>
+
+                <label>
+                    Nomor WhatsApp
+                    <input type="tel" name="telepon" required placeholder="08xxxxxxxxxx">
+                </label>
+
+                <label>
+                    Pilih Layanan
+                    <select name="layanan" required>
+                        <option value="">Pilih layanan</option>
+                        <option>Haircut — Rp35.000</option>
+                        <option>Haircut + Wash — Rp50.000</option>
+                        <option>Beard Trim — Rp25.000</option>
+                    </select>
+                </label>
+
+                <label>
+                    Pilih Barber
+                    <select name="barber" required>
+                        <option value="">Pilih barber</option>
+                        <option>Astrea Honda</option>
+                        <option>Toyota Mitsubishi</option>
+                        <option>Suzuki R3</option>
+                    </select>
+                </label>
+
+                <div class="form-jam-tanggal">
+                    <label>
+                        Tanggal
+                        <input type="date" name="tanggal" required>
+                    </label>
+                    <label>
+                        Jam
+                        <select name="jam" required>
+                            <option value="">Pilih jam</option>
+                            <option>09:00</option>
+                            <option>10:00</option>
+                            <option>11:00</option>
+                            <option>13:00</option>
+                            <option>14:00</option>
+                            <option>15:00</option>
+                            <option>16:00</option>
+                        </select>
+                    </label>
+                </div>
+
+                <button type="submit" class="tombol full">KONFIRMASI BOOKING</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a class="logo" href="index.html">SWARNA<span> KESA</span></a>
+        <p>Look sharp, feel confident.</p>
+        <small>© 2026 SWARNA KESA</small>
+    </footer>
+</body>
+</html>
