@@ -1,0 +1,304 @@
+/* ---------- 1. WARNA (ubah di sini untuk ganti tema) ---------- */
+:root {
+  --latar: #0E0D0B;      /* hitam hangat */
+  --panel: #161410;      
+  --emas: #C9A24B;       /* emas utama */
+  --emas-muda: #EBD59C;  /* emas muda */
+  --teks: #F1EADB;       /* gading */
+  --redup: #A39A86;      /* teks pendukung */
+  --garis: #2E2A20;      /* garis pemisah */
+}
+
+/* ---------- 2. DASAR ---------- */
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--latar);
+  color: var(--teks);
+  font: 300 16px/1.65 'Jost', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  line-height: 1.02;
+  margin: 0;
+}
+
+a { color: inherit; }
+
+.emas {
+  background: linear-gradient(100deg, #B58A32, #EBD59C 45%, #C9A24B);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- 3. NAVBAR ---------- */
+.navbar {
+  position: sticky;            
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;   
+  padding: 16px 6vw;
+  background: rgba(14, 13, 11, 0.92);
+  border-bottom: 1px solid var(--garis);
+}
+
+.logo {
+  font: 700 26px 'Cormorant Garamond', serif;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo i {
+  color: var(--emas);
+  font-style: normal;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--redup);
+  padding: 4px 0;
+  border-bottom: 1px solid transparent;
+}
+
+.menu a:hover { color: var(--teks); }
+
+.menu a.aktif {
+  color: var(--emas-muda);
+  border-color: var(--emas);
+}
+
+.menu a.tombol-nav {
+  background: var(--emas);
+  color: #15110A;
+  padding: 10px 22px;
+  border: 0;
+  font-weight: 500;
+}
+
+/* ---------- 4. TOMBOL ---------- */
+.tombol {
+  display: inline-block;
+  background: var(--emas);
+  color: #15110A;
+  text-decoration: none;
+  padding: 16px 34px;
+  font: 500 15px 'Jost', sans-serif;
+}
+
+.tombol:hover { background: var(--emas-muda); }
+
+.garis {
+  text-decoration: none;
+  border-bottom: 1px solid var(--emas);
+  padding-bottom: 2px;
+}
+
+.baris {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ---------- 5. HERO ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;   /* teks kiri lebih lebar dari lambang */
+  gap: 6vw;
+  align-items: center;
+  padding: 11vh 6vw 9vh;
+  min-height: 78vh;
+}
+
+/* clamp(min, ideal, max): ukuran huruf mengecil otomatis di layar kecil */
+.hero h1 {
+  font-size: clamp(52px, 8vw, 112px);
+  font-weight: 500;
+}
+
+.hero h1 em {
+  display: block;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.hero p {
+  max-width: 44ch;
+  color: var(--redup);
+  margin: 26px 0 34px;
+  font-size: 18px;
+}
+
+.hero .info {
+  margin-top: 34px;
+}
+
+.lambang {
+  justify-self: center;
+  width: min(380px, 78vw);
+  aspect-ratio: 1;          
+  border: 1px solid var(--emas);
+  padding: 14px;
+}
+
+.lambang-dalam {
+  height: 100%;
+  border: 1px solid rgba(201, 162, 75, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  background: radial-gradient(circle at 50% 40%, #241E10, #12100B 70%);
+}
+
+.lambang svg {
+  width: 46%;
+  color: var(--emas);
+}
+
+.lambang-teks {
+  font: italic 600 28px 'Cormorant Garamond', serif;
+  color: var(--emas-muda);
+}
+
+.lambang small { color: var(--redup); }
+
+/* ---------- 6. STATISTIK ---------- */
+.statistik {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);   /* tiga kolom sama lebar */
+  background: var(--panel);
+  border-top: 1px solid var(--garis);
+  border-bottom: 1px solid var(--garis);
+}
+
+.statistik div {
+  padding: 30px;
+  text-align: center;
+  border-right: 1px solid var(--garis);
+}
+
+.statistik div:last-child { border-right: 0; }
+
+.statistik b {
+  display: block;
+  font: 600 44px/1 'Cormorant Garamond', serif;
+}
+
+.statistik span {
+  color: var(--redup);
+  font-size: 14px;
+}
+
+/* ---------- 7. LAYANAN ---------- */
+.bagian { padding: 10vh 6vw; }
+
+.bagian h2 {
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.pengantar {
+  color: var(--redup);
+  max-width: 50ch;
+  margin: 0 0 44px;
+}
+
+.daftar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 880px;
+}
+
+.daftar li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 20px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--garis);
+  align-items: baseline;
+}
+
+.daftar h3 { font-size: 32px; }
+
+.daftar small {
+  color: var(--emas);
+  font: 400 13px 'Jost', sans-serif;
+  margin-left: 10px;
+}
+
+.harga {
+  font: 600 28px 'Cormorant Garamond', serif;
+  color: var(--emas-muda);
+}
+
+.daftar p {
+  margin: 0;
+  color: var(--redup);
+  grid-column: 1;
+}
+
+.daftar a {
+  grid-column: 2;
+  justify-self: end;
+  text-decoration: none;
+  border: 1px solid var(--emas);
+  color: var(--emas-muda);
+  padding: 8px 18px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.daftar a:hover {
+  background: var(--emas);
+  color: #15110A;
+}
+
+/* ---------- 8. FOOTER ---------- */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 6vw;
+  border-top: 1px solid var(--garis);
+  color: var(--redup);
+  font-size: 14px;
+}
+
+/* ---------- 9. TAMPILAN HP (layar 860px) ---------- */
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;   
+    padding-top: 7vh;
+  }
+
+  .menu { gap: 14px; font-size: 14px; }
+  .menu a { padding: 0; }
+  .menu a.tombol-nav { padding: 8px 12px; }
+
+  .statistik b { font-size: 32px; }
+  .statistik div { padding: 20px 8px; }
+
+  .footer { flex-direction: column; gap: 6px; }
+}
+
+@media (max-width: 480px) {
+  .navbar { padding: 14px 5vw; flex-wrap: wrap; gap: 12px; }
+  .menu { gap: 10px; font-size: 13px; flex-wrap: wrap; }
+}
