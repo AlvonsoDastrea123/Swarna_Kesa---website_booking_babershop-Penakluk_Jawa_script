@@ -1,4 +1,4 @@
-/* ---------- 1. WARNA (ubah di sini untuk ganti tema) ---------- */
+/* ---------- 1. WARNA  ---------- */
 :root {
   --latar: #0E0D0B;      /* hitam hangat */
   --panel: #161410;      
@@ -117,7 +117,7 @@ a { color: inherit; }
 /* ---------- 5. HERO ---------- */
 .hero {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;   /* teks kiri lebih lebar dari lambang */
+  grid-template-columns: 1.15fr 0.85fr;   
   gap: 6vw;
   align-items: center;
   padding: 11vh 6vw 9vh;
@@ -181,7 +181,7 @@ a { color: inherit; }
 /* ---------- 6. STATISTIK ---------- */
 .statistik {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);   /* tiga kolom sama lebar */
+  grid-template-columns: repeat(3, 1fr);   
   background: var(--panel);
   border-top: 1px solid var(--garis);
   border-bottom: 1px solid var(--garis);
