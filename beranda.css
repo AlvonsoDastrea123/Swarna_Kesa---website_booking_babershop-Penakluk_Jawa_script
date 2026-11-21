@@ -28,7 +28,10 @@ h1, h2, h3 {
   margin: 0;
 }
 
-a { color: inherit; }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .emas {
   background: linear-gradient(100deg, #B58A32, #EBD59C 45%, #C9A24B);
