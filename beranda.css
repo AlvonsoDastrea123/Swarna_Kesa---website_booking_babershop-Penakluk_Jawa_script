@@ -65,6 +65,11 @@ a {
   font-style: normal;
 }
 
+.logo i {
+  color: var(--emas);
+  font-style: normal;
+}
+
 .menu {
   display: flex;
   gap: 30px;
