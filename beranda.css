@@ -50,9 +50,11 @@ a { color: inherit; }
 }
 
 .logo {
-  font: 700 26px 'Cormorant Garamond', serif;
-  letter-spacing: 0.03em;
-  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
 }
 
 .logo i {
