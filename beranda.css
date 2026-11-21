@@ -57,7 +57,7 @@ a { color: inherit; }
   text-transform: uppercase;
 }
 
-.logo i {
+.logo span {
   color: var(--emas);
   font-style: normal;
 }
