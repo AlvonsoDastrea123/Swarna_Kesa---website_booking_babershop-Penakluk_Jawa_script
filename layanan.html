@@ -4,64 +4,65 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Layanan | SWARNA KESA</title>
-    <link rel="stylesheet" href="halaman.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layanan.css">
 </head>
 <body>
     <header class="header">
         <a class="logo" href="index.html">SWARNA<span> KESA</span></a>
         <nav class="nav-links">
             <a href="index.html">Beranda</a>
-            <a class="active" href="layanan.html">Layanan</a>
+            <a href="layanan.html" class="active">Layanan</a>
             <a href="tentang.html">Tentang</a>
             <a class="nav-booking" href="booking.html">Booking</a>
         </nav>
     </header>
 
-    <main class="halaman">
-        <section class="page-head">
+    <main>
+        <section class="page-hero">
             <h1>Layanan dan harga</h1>
-            <p class="subjudul">Pilih satu layanan, lalu lanjut ke booking. Pilihanmu otomatis terisi di formulir.</p>
+            <p>Pilih satu layanan, lalu lanjut ke booking. Pilihanmu otomatis terisi di formulir.</p>
         </section>
 
-        <section class="daftar-layanan">
-            <article class="layanan-item">
-                <div class="layanan-info">
-                    <h3>Haircut</h3>
-                    <p>Potongan rambut rapi sesuai bentuk wajah dan gaya pilihanmu.</p>
-                </div>
-                <div class="layanan-aksi">
-                    <span class="harga">Rp 35.000</span>
-                    <a class="tombol-kecil" href="booking.html?layanan=haircut">Pilih layanan</a>
-                </div>
-            </article>
+        <section class="layanan-wrap">
+            <ul class="daftar-layanan">
+                <li>
+                    <div class="layanan-info">
+                        <h3>Haircut</h3>
+                        <p>Potongan rambut rapi sesuai bentuk wajah dan gaya pilihanmu.</p>
+                    </div>
+                    <div class="layanan-aksi">
+                        <span class="harga">Rp 35.000</span>
+                        <a class="tombol-kecil" href="booking.html?layanan=haircut">Pilih layanan</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="layanan-info">
+                        <h3>Haircut + Wash <span class="badge">Terpopuler</span></h3>
+                        <p>Potong rambut dilengkapi keramas agar terasa lebih segar.</p>
+                    </div>
+                    <div class="layanan-aksi">
+                        <span class="harga">Rp 50.000</span>
+                        <a class="tombol-kecil" href="booking.html?layanan=haircut-wash">Pilih layanan</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="layanan-info">
+                        <h3>Beard Trim</h3>
+                        <p>Rapikan dan bentuk jenggot agar terlihat bersih dan presisi.</p>
+                    </div>
+                    <div class="layanan-aksi">
+                        <span class="harga">Rp 25.000</span>
+                        <a class="tombol-kecil" href="booking.html?layanan=beard-trim">Pilih layanan</a>
+                    </div>
+                </li>
+            </ul>
 
-            <article class="layanan-item">
-                <div class="layanan-info">
-                    <h3>Haircut + Wash <span class="badge">Terpopuler</span></h3>
-                    <p>Potong rambut dilengkapi keramas agar terasa lebih segar.</p>
-                </div>
-                <div class="layanan-aksi">
-                    <span class="harga">Rp 50.000</span>
-                    <a class="tombol-kecil" href="booking.html?layanan=haircut-wash">Pilih layanan</a>
-                </div>
-            </article>
-
-            <article class="layanan-item">
-                <div class="layanan-info">
-                    <h3>Beard Trim</h3>
-                    <p>Rapikan dan bentuk jenggot agar terlihat bersih dan presisi.</p>
-                </div>
-                <div class="layanan-aksi">
-                    <span class="harga">Rp 25.000</span>
-                    <a class="tombol-kecil" href="booking.html?layanan=beard-trim">Pilih layanan</a>
-                </div>
-            </article>
-        </section>
-
-        <section class="info-baris">
-            <div><span>Durasi per layanan</span><strong>30 sampai 60 menit</strong></div>
-            <div><span>Pembayaran</span><strong>Di tempat</strong></div>
-            <div><span>Jam buka</span><strong>09.00 sampai 21.00</strong></div>
+            <ul class="info-tambahan">
+                <li><span>Durasi per layanan</span><span>30 sampai 60 menit</span></li>
+                <li><span>Pembayaran</span><span>Di tempat</span></li>
+                <li><span>Jam buka</span><span>09.00 sampai 21.00</span></li>
+            </ul>
         </section>
     </main>
 
