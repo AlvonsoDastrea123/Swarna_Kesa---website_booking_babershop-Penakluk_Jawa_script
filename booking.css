@@ -70,6 +70,10 @@ ul {
   color: var(--gold);
 }
 
+.logo i {
+  color: var(--gold);
+  font-style: normal;
+
 .nav-links {
   display: flex;
   align-items: center;
