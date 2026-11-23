@@ -1,0 +1,67 @@
+/* Halaman Layanan (pakai style.css) */
+.page-hero p {
+  color: var(--text-muted);
+  max-width: 340px;
+  margin: 14px 0 44px;
+  font-size: 13px;
+}
+
+.layanan-wrap { max-width: 720px; }
+
+.daftar-layanan li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+.daftar-layanan li:first-child { padding-top: 0; }
+
+.layanan-info h3 {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.badge {
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-left: 6px;
+}
+
+.layanan-info p { color: var(--text-muted); font-size: 12.5px; margin-top: 4px; }
+
+.layanan-aksi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.harga {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.info-tambahan { margin-top: 28px; }
+
+.info-tambahan li {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 12.5px;
+}
+.info-tambahan li span:first-child { color: var(--text-muted); }
+
+@media (max-width: 560px) {
+  .daftar-layanan li { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .layanan-aksi { flex-direction: row; align-items: center; justify-content: space-between; width: 100%; }
+}

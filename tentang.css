@@ -1,0 +1,68 @@
+/* Halaman Tentang (pakai style.css) */
+main { padding-left: 0; padding-right: 0; max-width: none; }
+.tentang-hero,
+.tim { max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 48px; padding-right: 48px; }
+
+.tentang-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  padding-bottom: 48px;
+}
+.tentang-hero p { color: var(--text-muted); max-width: 380px; margin-top: 12px; font-size: 13px; }
+
+/* Statistik */
+.statistik {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.statistik li {
+  text-align: center;
+  padding: 32px 16px;
+  border-right: 1px solid var(--border);
+}
+.statistik li:last-child { border-right: none; }
+.statistik strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--gold-light);
+  line-height: 1.2;
+}
+.statistik span { color: var(--text-muted); font-size: 11.5px; }
+
+/* Tim barber */
+.tim { padding-top: 72px; }
+.tim h2 { font-family: var(--font-heading); font-size: 40px; font-weight: 400; margin-bottom: 28px; }
+
+.daftar-barber {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.daftar-barber li { padding: 22px 20px; border-right: 1px solid var(--border); transition: background var(--transition); }
+.daftar-barber li:last-child { border-right: none; }
+.daftar-barber li:hover { background: var(--surface-2); }
+.daftar-barber h3 { font-family: var(--font-heading); font-size: 17px; font-weight: 700; }
+.daftar-barber p { color: var(--text-muted); font-size: 11.5px; margin-top: 4px; }
+
+@media (max-width: 900px) {
+  .tentang-hero, .tim { padding-left: 24px; padding-right: 24px; }
+  .tentang-hero { grid-template-columns: 1fr; gap: 20px; }
+  .daftar-barber { grid-template-columns: repeat(2, 1fr); }
+  .daftar-barber li { border-bottom: 1px solid var(--border); }
+}
+
+@media (max-width: 560px) {
+  .statistik { grid-template-columns: 1fr; }
+  .statistik li { border-right: none; border-bottom: 1px solid var(--border); }
+  .statistik li:last-child { border-bottom: none; }
+}
